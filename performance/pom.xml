@@ -11,7 +11,7 @@
 	<artifactId>lesscss-maven-plugin-examples-performance</artifactId>
 	<packaging>war</packaging>
 	<name>Performance Example</name>
-	<description>Stress test for compilers</description>
+	<description>Stress test for compilers.</description>
 
 	<developers>
 		<developer>
