@@ -1,0 +1,15 @@
+/.project
+/.settings
+/target
+/features/.classpath
+/features/.project
+/features/.settings
+/features/target
+/imports/.classpath
+/imports/.project
+/imports/.settings
+/imports/target
+/performance/.classpath
+/performance/.project
+/performance/.settings
+/performance/target
