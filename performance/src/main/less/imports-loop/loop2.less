@@ -1,0 +1,9 @@
+@import (reference) "loop1.less";
+
+.import-loop(@n, @i: 1) when (@i =< @n) {
+	.grid-@{n}-@{i} {
+		width: @n * @i;
+	}
+	.import-loop(@n, (@i + 1));
+	.speed-loop((@n - @i));
+}

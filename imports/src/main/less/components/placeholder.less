@@ -1,0 +1,33 @@
+@import (less) "radiobutton.less";
+@import (reference) "../functions/vars/fonts.less";
+@import (reference) "../functions/opacity.less";
+.placeholderClass {
+	font-family: @placeholder-font;
+	font-size: 14px;
+	color: @placeholder-color;
+}
+
+::-webkit-input-placeholder {
+	.placeholderClass;
+}
+
+:-ms-input-placeholder {
+	.placeholderClass;
+}
+
+::-moz-placeholder {
+	.placeholderClass;
+}
+
+:-moz-placeholder {
+	.placeholderClass;
+}
+
+::-moz-placeholder {
+	.opacity (1);
+}
+
+:-moz-placeholder {
+	.opacity (1);
+}
+

@@ -1,0 +1,13 @@
+.border-radius (@args) {
+	-webkit-border-radius: @args;
+	border-radius: @args;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.border-radiuses (@topright: 0 , @bottomright: 0 , @bottomleft: 0 , @topleft: 0) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+

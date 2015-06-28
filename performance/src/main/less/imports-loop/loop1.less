@@ -1,0 +1,6 @@
+@import (reference) "loop2.less";
+
+.speed-loop(@n, @i: 1) when (@i =< @n) {
+	.import-loop(@i);
+	.speed-loop(@n, (@i + 1))
+}

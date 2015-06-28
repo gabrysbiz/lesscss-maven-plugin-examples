@@ -1,0 +1,81 @@
+@import (less) "buttons.less";
+@import (reference) "../functions/vars/fonts.less";
+@import (reference) "../functions/vars/colors.less";
+@import (reference) "../functions/radius.less";
+@import (reference) "../functions/shadows.less";
+@import (reference) "../functions/boxsizing.less";
+@import (reference) "../components/reset.less";
+* {
+	.outlineClr;
+	.border-box;
+	.preload & {
+		-webkit-transition: none ! important;
+		-moz-transition: none ! important;
+		-ms-transition: none ! important;
+		-o-transition: none ! important;
+	}
+}
+
+input:-webkit-autofill , textarea:-webkit-autofill , select:-webkit-autofill {
+	.inner-shadow-imp (0 0 0 500px @white);
+}
+
+input , textarea , select , button {
+	.border-radius (0);
+}
+
+::-ms-clear {
+	display: none;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+body {
+	font-family: @main-font;
+	line-height: normal;
+	.marginclr;
+}
+
+a , span , label {
+	display: inline-block;
+	&.link {
+		color: @orange;
+		text-decoration: none;
+		&:hover , &:focus {
+			color: @blue;
+			text-decoration: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+a {
+	color: @blue;
+	text-decoration: none;
+	&:hover , &:focus {
+		color: @orange;
+		text-decoration: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+label {
+	font-weight: normal;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	vertical-align: middle;
+}

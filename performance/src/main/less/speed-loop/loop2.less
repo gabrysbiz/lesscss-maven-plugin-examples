@@ -1,0 +1,20 @@
+@pageSize: 1200px;
+@collumns: 100;
+
+.loop(@collumns);
+
+.loop(@n, @i: 0) when (@i < @n) {
+	.generate-columns(@n - @i);
+	.loop(@n, (@i + 1))
+}
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+	.collumns(@n, @i);
+	.generate-columns(@n, (@i + 1));
+}
+
+.collumns(@n, @i) {	
+	.grid-@{n}-@{i} {
+		width: (@pageSize / @n * @i);
+	}
+}

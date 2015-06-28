@@ -1,0 +1,4 @@
+.import-loop(@n, @i: 0) when (@i < @n) {
+	@import (less) "loop2.less";
+	.import-loop(@n, (@i + 1))
+}

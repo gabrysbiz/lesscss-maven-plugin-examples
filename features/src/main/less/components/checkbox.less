@@ -1,0 +1,66 @@
+@import (reference) "../functions/vars/colors.less";
+@import (reference) "../functions/vars/paths.less";
+@import (reference) "../functions/size.less";
+@import (reference) "../functions/radius.less";
+@import (reference) "../functions/shadows.less";
+.checkbox-holder {
+	display: inline-block;
+	vertical-align: middle;
+	label {
+		cursor: pointer;
+		margin: 0;
+		&:before {
+			.desktop & {
+				.size (18px , 18px);
+			}
+
+			.tablet & {
+				.size (23px , 23px);
+			}
+
+			content: "";
+			background-color: #fff;
+			border: 1px solid #d7d7d7;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-right: 10px;
+			.border-radius (0);
+			.inner-shadow (1px 1.732px 5px 0px rgba(0, 0, 0, 0.07));
+		}
+	}
+
+	&.aligned {
+		label {
+			position: relative;
+			padding-left: 30px;
+			&:before {
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+
+	input[type=checkbox] {
+		display: none;
+		&:checked + label:before {
+			.desktop & {
+				background-size: 10px 7px;
+			}
+
+			.tablet & {
+				background-size: 14px 10px;
+			}
+
+			background-image: url("@{icon_path}check-orange.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+
+		&:disabled + label:before {
+			background-color: @background;
+		}
+	}
+}
+

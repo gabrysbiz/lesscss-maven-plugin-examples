@@ -1,0 +1,85 @@
+@import (less) "reset.less";
+@import (reference) "../functions/vars/colors.less";
+@import (reference) "../functions/transitions.less";
+svg {
+	&.middle {
+		vertical-align: middle;
+	}
+
+	&.button {
+		display: table-cell;
+		margin: 0 auto;
+		vertical-align: middle;
+	}
+
+	&.hover-white {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @white;
+		}
+	}
+
+	&.hover-black {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @black;
+		}
+	}
+
+	&.hover-orange {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @orange;
+		}
+	}
+
+	&.hover-blue {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @blue;
+		}
+	}
+
+	&.hover-light-blue {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @light-blue;
+		}
+	}
+
+	&.hover-red {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @red;
+		}
+	}
+
+	&.hover-green {
+		& path , &:hover path {
+			.transition (fill .25s ease);
+		}
+
+		&:hover path {
+			fill: @green;
+		}
+	}
+}
+

@@ -1,0 +1,24 @@
+.box-shadow (@args) {
+	-webkit-box-shadow: @args;
+	-moz-box-shadow: @args;
+	box-shadow: @args;
+}
+
+.inner-shadow (@args) {
+	.box-shadow (inset @args);
+}
+
+.box-shadow-imp (@args) {
+	-webkit-box-shadow: @args ! important;
+	-moz-box-shadow: @args ! important;
+	box-shadow: @args ! important;
+}
+
+.inner-shadow-imp (@args) {
+	.box-shadow-imp (inset @args);
+}
+
+.text-shadow (@args) {
+	text-shadow: @args;
+}
+

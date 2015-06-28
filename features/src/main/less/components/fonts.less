@@ -1,0 +1,31 @@
+@import (reference) "../functions/vars/fonts.less";
+.src-font (@name-font) {
+	font-family: @name-font;
+	src: url("@{font_path}@{name-font}.woff2") format("woff2"), url("@{font_path}@{name-font}.woff") format("woff"), url("@{font_path}@{name-font}.ttf") format("truetype");
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	.src-font (@bold-font);
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	.src-font (@light-font);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	.src-font (@light-italic-font);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	.src-font (@regular-font);
+	font-style: normal;
+	font-weight: normal;
+}
+

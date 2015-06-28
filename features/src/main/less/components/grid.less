@@ -1,0 +1,181 @@
+@import (reference) "../functions/vars/size.less";
+@import (reference) "../functions/vars/media.less";
+@grid-margin: 15px;
+.properties {
+	&.no-left {
+		margin-left: 0;
+	}
+
+	&.no-right {
+		margin-right: 0;
+	}
+
+	&.no-sides {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&.marg-top {
+		margin-top: @grid-margin;
+	}
+
+	&.marg-bottom {
+		margin-bottom: @grid-margin;
+	}
+
+	&.marg-topbot {
+		margin-top: @grid-margin;
+		margin-bottom: @grid-margin;
+	}
+}
+
+.container {
+	min-width: @min-size ! important;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.row {
+	margin: 0 @grid-margin;
+	.properties;
+	&:before , &:after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
+
+.desktop {
+	.grid-1 , .grid-2 , .grid-3 , .grid-4 , .grid-5 , .grid-6 , .grid-7 , .grid-8 , .grid-9 , .grid-10 , .grid-11 , .grid-12 {
+		display: inline-block;
+		position: relative;
+		margin: 0 @grid-margin;
+		.properties;
+	}
+
+	.grid-1 {
+		width: 100px - 2 * @grid-margin;
+	}
+
+	.grid-2 {
+		width: 200px - 2 * @grid-margin;
+	}
+
+	.grid-3 {
+		width: 300px - 2 * @grid-margin;
+	}
+
+	.grid-4 {
+		width: 400px - 2 * @grid-margin;
+	}
+
+	.grid-5 {
+		width: 500px - 2 * @grid-margin;
+	}
+
+	.grid-6 {
+		width: 600px - 2 * @grid-margin;
+	}
+
+	.grid-7 {
+		width: 700px - 2 * @grid-margin;
+	}
+
+	.grid-8 {
+		width: 800px - 2 * @grid-margin;
+	}
+
+	.grid-9 {
+		width: 900px - 2 * @grid-margin;
+	}
+
+	.grid-10 {
+		width: 1000px - 2 * @grid-margin;
+	}
+
+	.grid-11 {
+		width: 1100px - 2 * @grid-margin;
+	}
+
+	.grid-12 {
+		width: 1200px - 2 * @grid-margin;
+	}
+}
+
+.tablet {
+	.t-grid-1 , .t-grid-2 , .t-grid-3 , .t-grid-4 , .t-grid-5 , .t-grid-6 , .t-grid-7 , .t-grid-8 {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+		.properties;
+	}
+
+	@media @landscape {
+		.t-grid-1 {
+			width: 128px;
+		}
+
+		.t-grid-2 {
+			width: 256px;
+		}
+
+		.t-grid-3 {
+			width: 384px;
+		}
+
+		.t-grid-4 {
+			width: 512px;
+		}
+
+		.t-grid-5 {
+			width: 640px;
+		}
+
+		.t-grid-6 {
+			width: 768px;
+		}
+
+		.t-grid-7 {
+			width: 896px;
+		}
+
+		.t-grid-8 {
+			width: 1024px;
+		}
+	}
+
+	@media @portrait {
+		.t-grid-1 {
+			width: 96px;
+		}
+
+		.t-grid-2 {
+			width: 192px;
+		}
+
+		.t-grid-3 {
+			width: 288px;
+		}
+
+		.t-grid-4 {
+			width: 384px;
+		}
+
+		.t-grid-5 {
+			width: 480px;
+		}
+
+		.t-grid-6 {
+			width: 576px;
+		}
+
+		.t-grid-7 {
+			width: 672px;
+		}
+
+		.t-grid-8 {
+			width: 768px;
+		}
+	}
+}
+

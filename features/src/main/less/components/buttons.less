@@ -1,0 +1,173 @@
+@import (reference) "../functions/vars/vars.less";
+@import (reference) "../functions/size.less";
+@import (reference) "../functions/radius.less";
+@import (reference) "../functions/shadows.less";
+@import (reference) "../functions/gradients.less";
+@import (reference) "../functions/opacity.less";
+@import (reference) "../components/reset.less";
+.btn-general {
+	padding: 5px;
+	background-color: @white;
+	border: 1px solid @btn-border;
+	.border-radius (2px);
+	.box-shadow (inset 0px -2px 0px 0px @gray-line);
+	cursor: pointer;
+	&:focus , &:hover {
+		.outlineClr;
+	}
+}
+
+.btn-keyboard {
+	border: 0;
+	background: none;
+	cursor: pointer;
+	.marginclr;
+	.box-shadow (none);
+	&:focus , &:hover {
+		.outlineClr;
+	}
+}
+
+.btn-link {
+	border: 0;
+	background: none;
+	cursor: pointer;
+	text-align: left;
+	.marginclr;
+	.box-shadow (none);
+	&:focus , &:hover {
+		.outlineClr;
+	}
+
+	&:disabled {
+		.opacity (0.6);
+	}
+}
+
+.btn-close {
+	.size (40px , 37px);
+	border: 0;
+	margin: 0;
+	background-color: rgba(178, 178, 178, .1);
+	cursor: pointer;
+	padding: 0;
+	&:focus , &:hover {
+		.outlineClr;
+	}
+}
+
+.btn-menu {
+	.size (@input-button , @input-button);
+	background-color: @white;
+	border: 1px solid @btn-border;
+	.box-shadow (inset 0px -2px 0px 0px @gray-line);
+	cursor: pointer;
+	padding: 0;
+	&:focus , &:hover {
+		.outlineClr;
+	}
+}
+
+.btn-small {
+	.size (24px , 23px);
+	background-color: @white;
+	border: 1px solid @btn-border;
+	.border-radius (2px);
+	.box-shadow (inset 0px -2px 0px 0px @gray-line);
+	cursor: pointer;
+	padding: 0;
+	&:focus , &:hover {
+		.outlineClr;
+	}
+}
+
+.btn-arrow {
+	.size (@input-button , @input-button);
+	background-color: transparent;
+	border: 1px solid @white;
+	.box-shadow (none);
+	cursor: pointer;
+	padding: 0;
+	&:focus , &:hover {
+		.outlineClr;
+	}
+}
+
+.btn-submit {
+	font-family: @main-font;
+	font-size: 22px;
+	color: @black;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	.linear-gradient-top (@white , rgba(255, 255, 255, .05) , 0% , rgba(0, 0, 0, .05) , 100%);
+	.box-shadow (0 1px 2px 0 rgba(0, 0, 0, 0.25) , 0 1px 1px 0 rgba(255, 255, 255, 1) inset;);
+	&:focus , &:hover {
+		.outlineClr;
+	}
+
+	&:focus {
+		border: 1px solid rgba(169, 169, 169, .8);
+	}
+
+	&:active {
+		color: @orange;
+	}
+
+	&:active:focus {
+		border: 0;
+		color: @orange;
+	}
+
+	&:disabled {
+		.opacity (0.6);
+	}
+}
+
+.btn-transfer {
+	font-family: @main-font;
+	font-size: 14px;
+	color: @black;
+	border: 0;
+	padding: 5px 10px;
+	cursor: pointer;
+	.linear-gradient-top (@white , rgba(255, 255, 255, .05) , 0% , rgba(0, 0, 0, .05) , 100%);
+	.box-shadow (0 1px 2px 0 rgba(0, 0, 0, 0.25) , 0 1px 1px 0 rgba(255, 255, 255, 1) inset;);
+	&:focus , &:hover {
+		.outlineClr;
+	}
+
+	&:focus {
+		border: 1px solid rgba(169, 169, 169, .8);
+	}
+
+	&:active {
+		color: @orange;
+	}
+
+	&:active:focus {
+		border: 0;
+		color: @orange;
+	}
+
+	&:disabled {
+		.opacity (0.6);
+	}
+}
+
+.btn-standard {
+	font-family: @main-font;
+	color: @black;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	.linear-gradient-top (@white , rgba(255, 255, 255, .05) , 0% , rgba(0, 0, 0, .05) , 100%);
+	.box-shadow (0 1px 2px 0 rgba(0, 0, 0, 0.25) , inset 0 1px 1px 0 white;);
+	&:focus , &:hover {
+		.outlineClr;
+	}
+
+	&:disabled {
+		.opacity (0.6);
+	}
+}
