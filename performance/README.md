@@ -1,5 +1,5 @@
 # Performance Example
-Stress test for compilers.
+Stress tests for compilers.
 
 # Usage
 How to use example:
