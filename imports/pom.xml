@@ -9,7 +9,6 @@
 		<version>1.0</version>
 	</parent>
 	<artifactId>lesscss-maven-plugin-examples-imports</artifactId>
-	<packaging>war</packaging>
 	<name>Imports Example</name>
 	<description>Shows language import options support.</description>
 

@@ -9,7 +9,6 @@
 		<version>1.0</version>
 	</parent>
 	<artifactId>lesscss-maven-plugin-examples-features</artifactId>
-	<packaging>war</packaging>
 	<name>Features Example</name>
 	<description>Shows language features support.</description>
 
