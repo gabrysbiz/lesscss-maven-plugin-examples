@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>biz.gabrys.maven.plugins</groupId>
-	<artifactId>lesscss-maven-plugin-examples</artifactId>
-	<version>1.2-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>LessCSS Maven Plugin Examples</name>
-	<description>LessCSS Maven Plugin example projects.</description>
+    <groupId>biz.gabrys.maven.plugins</groupId>
+    <artifactId>lesscss-maven-plugin-examples</artifactId>
+    <version>1.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>LessCSS Maven Plugin Examples</name>
+    <description>LessCSS Maven Plugin example projects.</description>
 
-	<inceptionYear>2015</inceptionYear>
+    <inceptionYear>2015</inceptionYear>
 
-	<scm>
-		<connection>scm:git:git@github.com:gabrysbiz/lesscss-maven-plugin-examples.git</connection>
-		<developerConnection>scm:git:git@github.com:gabrysbiz/lesscss-maven-plugin-examples.git</developerConnection>
-		<url>https://github.com/gabrysbiz/lesscss-maven-plugin-examples</url>
-	</scm>
+    <modules>
+        <module>features</module>
+        <module>imports</module>
+        <module>performance</module>
+    </modules>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/gabrysbiz/lesscss-maven-plugin-examples/issues</url>
-	</issueManagement>
+    <scm>
+        <connection>scm:git:git@github.com:gabrysbiz/lesscss-maven-plugin-examples.git</connection>
+        <developerConnection>scm:git:git@github.com:gabrysbiz/lesscss-maven-plugin-examples.git</developerConnection>
+        <url>https://github.com/gabrysbiz/lesscss-maven-plugin-examples</url>
+    </scm>
 
-	<modules>
-		<module>features</module>
-		<module>imports</module>
-		<module>performance</module>
-	</modules>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/gabrysbiz/lesscss-maven-plugin-examples/issues</url>
+    </issueManagement>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype's SNAPSHOT repository</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype's SNAPSHOT repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>biz.gabrys.maven.plugins</groupId>
-					<artifactId>lesscss-maven-plugin</artifactId>
-					<version>1.2-SNAPSHOT</version>
-				</plugin>
-				<plugin>
-					<groupId>org.lesscss</groupId>
-					<artifactId>lesscss-maven-plugin</artifactId>
-					<version>1.7.0.1.1</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>biz.gabrys.maven.plugins</groupId>
+                    <artifactId>lesscss-maven-plugin</artifactId>
+                    <version>1.2-SNAPSHOT</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.lesscss</groupId>
+                    <artifactId>lesscss-maven-plugin</artifactId>
+                    <version>1.7.0.1.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
