@@ -1,5 +1,5 @@
 # LessCSS Maven Plugin Examples
-[LessCSS Maven Plugin](http://www.gabrys.biz/projects/lesscss-maven-plugin/) example projects.
+[LessCSS Maven Plugin](http://lesscss-maven-plugin.projects.gabrys.biz/) example projects.
 
 # Usage
 How to use example:

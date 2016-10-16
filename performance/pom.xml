@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>biz.gabrys.maven.plugins</groupId>
-		<artifactId>lesscss-maven-plugin-examples</artifactId>
-		<version>1.2-SNAPSHOT</version>
-	</parent>
-	<artifactId>lesscss-maven-plugin-examples-performance</artifactId>
-	<name>Performance Example</name>
-	<description>Stress tests for compilers.</description>
+    <parent>
+        <groupId>biz.gabrys.maven.plugins</groupId>
+        <artifactId>lesscss-maven-plugin-examples</artifactId>
+        <version>1.2.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>lesscss-maven-plugin-examples-performance</artifactId>
+    <name>Performance Example</name>
+    <description>Stress tests for compilers.</description>
 
-	<developers>
-		<developer>
-			<id>ivijan</id>
-			<name>Ivijan Hađija</name>
-			<email>ivijan1987@gmail.com</email>
-			<url>http://ivijan.hekko24.pl/</url>
-			<timezone>Europe/Warsaw</timezone>
-		</developer>
-	</developers>
+    <developers>
+        <developer>
+            <id>ivijan</id>
+            <name>Ivijan Hađija</name>
+            <email>ivijan1987@gmail.com</email>
+            <url>http://ivijan.hekko24.pl/</url>
+            <timezone>Europe/Warsaw</timezone>
+        </developer>
+    </developers>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>biz.gabrys.maven.plugins</groupId>
-					<artifactId>lesscss-maven-plugin</artifactId>
-					<configuration>
-						<!-- add here your configuration -->
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.lesscss</groupId>
-					<artifactId>lesscss-maven-plugin</artifactId>
-					<configuration>
-						<!-- add here your configuration -->
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>biz.gabrys.maven.plugins</groupId>
+                    <artifactId>lesscss-maven-plugin</artifactId>
+                    <configuration>
+                        <!-- add here your configuration -->
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.lesscss</groupId>
+                    <artifactId>lesscss-maven-plugin</artifactId>
+                    <configuration>
+                        <!-- add here your configuration -->
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
