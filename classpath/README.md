@@ -3,6 +3,27 @@ Shows support for classpath protocol.
 
 `org.lesscss:lesscss-maven-plugin:compile` does not support compilation of sources located in classpath
 
+# file.jar content:
+## /file.less
+
+    @import (less) "abc/1.less";
+    span {
+        content: 'this style is defined in file.jar';
+    }
+
+## /abc/1.less
+
+    @import (less) "2.less";
+    span {
+        content: "file.jar/abc/1.less"
+    }
+
+## /abc/2.less
+
+    span {
+        content: "file.jar/abc/2.less"
+    }
+
 # Usage
 How to use example:
 
