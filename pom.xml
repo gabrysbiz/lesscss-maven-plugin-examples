@@ -13,6 +13,7 @@
     <inceptionYear>2015</inceptionYear>
 
     <modules>
+        <module>classpath</module>
         <module>features</module>
         <module>imports</module>
         <module>performance</module>

@@ -1,6 +1,10 @@
 /.project
 /.settings
 /target
+/classpath/.classpath
+/classpath/.project
+/classpath/.settings
+/classpath/target
 /features/.classpath
 /features/.project
 /features/.settings
