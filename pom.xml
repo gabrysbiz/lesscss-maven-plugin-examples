@@ -5,7 +5,7 @@
 
     <groupId>biz.gabrys.maven.plugins</groupId>
     <artifactId>lesscss-maven-plugin-examples</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <packaging>pom</packaging>
     <name>LessCSS Maven Plugin Examples</name>
     <description>LessCSS Maven Plugin example projects.</description>
@@ -54,7 +54,7 @@
                 <plugin>
                     <groupId>biz.gabrys.maven.plugins</groupId>
                     <artifactId>lesscss-maven-plugin</artifactId>
-                    <version>1.2.0</version>
+                    <version>1.2.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.lesscss</groupId>
